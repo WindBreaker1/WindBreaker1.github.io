@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <a href="/"><h1>My Blog</h1></a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>{{ page.title }}</h1>
+            <p>
+                <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+            </p>
+            {{ content }}
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; {{ site.time | date: "%Y" }} My Blog</p>
+    </footer>
+</body>
+</html>
