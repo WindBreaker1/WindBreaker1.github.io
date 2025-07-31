@@ -1,6 +1,0 @@
-title: WindBreaker's Blog
-email: windbreaker1@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  This is my first blog powered by Jekyll and GitHub Pages.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
